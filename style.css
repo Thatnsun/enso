@@ -7,11 +7,12 @@ body {
  padding:0;
  border:0;
  outline:0;
- --btn: #cccccc;
+ margin: 0;
+ --btn: #f1f1f1;
 }
 
 a {
- color: #231f20;
+ color: #4b4746;
  text-decoration: none;
 }
 
@@ -22,16 +23,11 @@ h1 {
   margin: 3em;
 }
 
-span {
-  transform: scale(3,1.5);
-  display: inline-block;
-  font-size:150px; font-family: sans-serif;
-  font-weight: lighter;
-  color: #ffffff;
-}
+
 
 p {
   font-size:40px; font-family: sans-serif;
+  color: #f1f1f1;
   font-weight: bold;
   margin: 0em;
 }
@@ -63,7 +59,7 @@ label:after {
   border-radius: 50%;
   position: absolute;
   content: '';
-  background: #fff;
+  background: #4b4746;
   width: 20px;
   height: 20px;
   top: 5px;
@@ -78,28 +74,35 @@ input:checked + label {
 input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
+  background: #f1f1f1;
 }
  
 
 
 .container {
+  background-image: url("enso2.png");
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   text-align: center;
-  height: 0;
-  margin-top: 180px;
+  margin-top: 25px;
+  height: 900px;
+  width: 100%;
+  user-select: none;
   
 }
 
-.content {
-  position: absolute;
-  top: 0px; left: 0;
-  width: 100%; height: 100%
+.cover{
+  position: relative;
+  height: 275px;
 }
 
-.content2 {
-  top: 0; left: 0;
-  width: 100%; height: 100%
+.content {
+  display: flex;
+  width: 100%; height: 300px;
   z-index: 1;
+  align-items: center;
+  justify-content: center;    
 }
 
 .market {
